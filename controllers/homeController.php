@@ -1,14 +1,20 @@
 <?php 
 
 
-class homeController{
+class homeController extends controller{
 
 	public function index(){
-		echo "Olá mundo!";
-	}
 
-	public function teste(){
-		echo "Este é um teste.";
-	}
+		$anuncios = new Anuncios();
+		$usuarios = new Usuarios();
 
+		$dados = [
+			'nome' => $usuarios->getNome(),
+			'qt' => $anuncios->getQuantidade(),
+			'idade' => $usuarios->getIdade()
+		];
+
+
+		$this->loadTemplate('home', $dados);
+	}
 }

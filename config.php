@@ -4,7 +4,7 @@ require_once("enviroment.php");
 $config = [];
 
 if (ENVIROMENT == 'development') {
-	define('BASE_URL', "http://localhost/B7web/PHP_do_zero_ao_profissional/Modulo%2016%20-%20PHP%20super%20avan%c3%a7ado/mvc/");
+	define('BASE_URL', "http://localhost/B7web/PHP_do_zero_ao_profissional/Modulo16_PHP_super_avancado/mvc/");
 	//Banco de dados de desenvolvedor
 	$config['dbname'] = 'mvc';
 	$config['host'] = 'localhost';
